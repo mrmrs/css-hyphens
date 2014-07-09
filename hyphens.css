@@ -1,0 +1,27 @@
+/*
+   HYPHENS
+*/
+
+
+.hyphen-none    {  hyphens: none; }
+.hyphen-manual  {  hyphens: manual; }
+.hyphen-auto    {  hyphens: auto; }
+
+@media screen and (min-width: 48em) {
+  .hyphen-none-ns    {  hyphens: none; }
+  .hyphen-manual-ns  {  hyphens: manual; }
+  .hyphen-auto-ns    {  hyphens: auto; }
+}
+
+@media screen and (min-width:48em) and (max-width: 64em) {
+  .hyphen-none-m    {  hyphens: none; }
+  .hyphen-manual-m  {  hyphens: manual; }
+  .hyphen-auto-m    {  hyphens: auto; }
+}
+
+@media screen and (min-width: 64em) {
+  .hyphen-none-l    {  hyphens: none; }
+  .hyphen-manual-l  {  hyphens: manual; }
+  .hyphen-auto-l    {  hyphens: auto; }
+}
+
