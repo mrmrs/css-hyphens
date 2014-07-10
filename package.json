@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "hyphens"
   ],
   "css-hyphens": {
     "type": "git",
