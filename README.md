@@ -23,19 +23,19 @@ or download the css on github and include in your project.
 .hyphen-manual  {  hyphens: manual; }
 .hyphen-auto    {  hyphens: auto; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .hyphen-none-ns    {  hyphens: none; }
   .hyphen-manual-ns  {  hyphens: manual; }
   .hyphen-auto-ns    {  hyphens: auto; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .hyphen-none-m    {  hyphens: none; }
   .hyphen-manual-m  {  hyphens: manual; }
   .hyphen-auto-m    {  hyphens: auto; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .hyphen-none-l    {  hyphens: none; }
   .hyphen-manual-l  {  hyphens: manual; }
   .hyphen-auto-l    {  hyphens: auto; }
