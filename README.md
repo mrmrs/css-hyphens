@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-hyphens)
 ## File Size
 
 643B hyphens.css
-483B hyphens.min.css
+483B hyphens.min.css 
+161B minified and gzipped
 
 ## The Code
 ```
