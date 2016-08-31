@@ -1,7 +1,7 @@
 {
   "name": "css-hyphens",
   "style": "hyphens.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-hyphens",
   "description": "Css module of single purpose classes for hyphens",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-hyphens.css > css/css-hyphens.css && tachyons src/css-hyphens.css --minify > css/css-hyphens.min.css && tachyons src/css-hyphens.css --generate-docs --package=../../package.json > readme.md"
