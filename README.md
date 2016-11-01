@@ -1,10 +1,10 @@
-# css-hyphens 0.0.6
+# css-hyphens 1.0.6
 
 Css module of single purpose classes for hyphens
 
 #### Stats
 
-181 | 12 | 12
+210 | 12 | 36
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-hyphens
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-hyphens
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-hyphens.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-hyphens";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-hyphens@1.0.6/css/css-hyphens.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,32 +68,32 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    HYPHENS
 */
-.hyphen-none { hyphens: none; }
-.hyphen-manual { hyphens: manual; }
-.hyphen-auto { hyphens: auto; }
+.hyphen-none { -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; }
+.hyphen-manual { -webkit-hyphens: manual; -ms-hyphens: manual; hyphens: manual; }
+.hyphen-auto { -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
 @media screen and (min-width: 48em) {
- .hyphen-none-ns { hyphens: none; }
- .hyphen-manual-ns { hyphens: manual; }
- .hyphen-auto-ns { hyphens: auto; }
+ .hyphen-none-ns { -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; }
+ .hyphen-manual-ns { -webkit-hyphens: manual; -ms-hyphens: manual; hyphens: manual; }
+ .hyphen-auto-ns { -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .hyphen-none-m { hyphens: none; }
- .hyphen-manual-m { hyphens: manual; }
- .hyphen-auto-m { hyphens: auto; }
+ .hyphen-none-m { -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; }
+ .hyphen-manual-m { -webkit-hyphens: manual; -ms-hyphens: manual; hyphens: manual; }
+ .hyphen-auto-m { -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
 }
 @media screen and (min-width: 64em) {
- .hyphen-none-l { hyphens: none; }
- .hyphen-manual-l { hyphens: manual; }
- .hyphen-auto-l { hyphens: auto; }
+ .hyphen-none-l { -webkit-hyphens: none; -ms-hyphens: none; hyphens: none; }
+ .hyphen-manual-l { -webkit-hyphens: manual; -ms-hyphens: manual; hyphens: manual; }
+ .hyphen-auto-l { -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
 }
 ```
 
@@ -95,3 +113,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
