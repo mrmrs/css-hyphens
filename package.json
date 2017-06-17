@@ -1,5 +1,6 @@
 {
   "name": "css-hyphens",
+  "main": "hyphens.css",
   "style": "hyphens.css",
   "version": "1.0.7",
   "homepage": "http://github.com/mrmrs/css-hyphens",
