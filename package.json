@@ -1,7 +1,7 @@
 {
   "name": "css-hyphens",
-  "main": "hyphens.css",
-  "style": "hyphens.css",
+  "main": "css/css-hyphens.css",
+  "style": "css/css-hyphens.min.css",
   "version": "1.0.7",
   "homepage": "http://github.com/mrmrs/css-hyphens",
   "description": "Css module of single purpose classes for hyphens",
