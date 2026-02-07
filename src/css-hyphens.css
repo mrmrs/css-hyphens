@@ -8,9 +8,9 @@
 .hyphen-auto    {  hyphens: auto; }
 
 @media screen and (min-width: 48em) {
-  .hyphen-none-ns    {  hyphens: none; }
-  .hyphen-manual-ns  {  hyphens: manual; }
-  .hyphen-auto-ns    {  hyphens: auto; }
+  .hyphen-none-s    {  hyphens: none; }
+  .hyphen-manual-s  {  hyphens: manual; }
+  .hyphen-auto-s    {  hyphens: auto; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
