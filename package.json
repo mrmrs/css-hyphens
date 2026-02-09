@@ -1,38 +1,44 @@
 {
   "name": "css-hyphens",
-  "style": "hyphens.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-hyphens",
-  "description": "Css module of single purpose classes for hyphens",
+  "version": "2.0.0",
+  "description": "Functional CSS for hyphens",
+  "style": "dist/hyphens.css",
+  "main": "dist/hyphens.css",
+  "exports": {
+    ".": "./dist/hyphens.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "hyphens"
+    "hyphens",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-hyphens": {
+  "homepage": "https://github.com/mrmrs/css-hyphens",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-hyphens.git"
+    "url": "https://github.com/mrmrs/css-hyphens.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-hyphens/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-hyphens/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
