@@ -7,19 +7,19 @@
 .hyphen-manual  {  hyphens: manual; }
 .hyphen-auto    {  hyphens: auto; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .hyphen-none-s    {  hyphens: none; }
   .hyphen-manual-s  {  hyphens: manual; }
   .hyphen-auto-s    {  hyphens: auto; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .hyphen-none-m    {  hyphens: none; }
   .hyphen-manual-m  {  hyphens: manual; }
   .hyphen-auto-m    {  hyphens: auto; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .hyphen-none-l    {  hyphens: none; }
   .hyphen-manual-l  {  hyphens: manual; }
   .hyphen-auto-l    {  hyphens: auto; }
